@@ -1,10 +1,10 @@
-function calc() {
+function calculate() {
     var a = parseInt(document.querySelector("#value1").value);
     var b = parseInt(document.querySelector("#value2").value);
     var operator = document.querySelector("#operator").value
     var calculate;
 
-    if( operator == "add"){
+    if( operator == "plus"){
         calculate = a + b;}
     
         else if (operator == 'minus'){
@@ -16,6 +16,7 @@ function calc() {
         else if (operator == 'divided by'){
         calculate = a / b}
 
-    document.querySelector("#results").innerHTML = calculate;
+ console.log(calculate)
+    document.getElementById("results").innerHTML = calculate;
     }
         
