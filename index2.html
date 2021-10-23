@@ -9,9 +9,15 @@
 
 </head>
 <body>
-  <h3>Addition Only Calculator</h3>
+  <h3>Multi Function Calculator</h3>
   <form>
     <input type="text" id="a" />
+    <select id="operator">
+      <option value="add">+</option>
+      <option value="subtract">-</option>
+      <option value="multiply">*</option>
+      <option value="divide">/</option>
+    </select>
     <input type="text" id="b" />
     <input type="button" value="=" onclick="calculate()" />
   </form>
