@@ -5,12 +5,17 @@ function calculate(){
   
   var operator = document.getElementById(operator)
   var op = operator.options[operator.selectedIndex].value
-
-  var answer = parseInt(a) + parseInt(b)
-  
   document.getElementById("answer").innerHTML = answer
-
-
-
-
+    if(operator === "add") {
+      var answer = parseInt(a) + parseInt(b)
+    } else
+    if(operator === "subtract") {
+      var answer = parseInt(a) - parseInt(b)
+    } else 
+    if(operator === "multiply") {
+      var answer = parseInt(a) * parseInt(b)
+    } else    
+    if(operator === "divide") {
+      var answer = parseInt(a) / parseInt(b)
+}
 }
