@@ -1,21 +1,24 @@
-function calculate(){
-
+function calculate()
+{
   var a = document.getElementById("a").value
   var b = document.getElementById("b").value
-  
-  var operator = document.getElementById(operator)
+  var operator = document.getElementById("operator")
+
   var op = operator.options[operator.selectedIndex].value
-  document.getElementById("answer").innerHTML = answer
-    if(operator === "add") {
+
+    if(op === "add") {
       var answer = parseInt(a) + parseInt(b)
-    } else
-    if(operator === "subtract") {
+    } 
+    else if(op === "subtract") {
       var answer = parseInt(a) - parseInt(b)
-    } else 
-    if(operator === "multiply") {
+    } 
+    else if(op === "multiply") {
       var answer = parseInt(a) * parseInt(b)
-    } else    
-    if(operator === "divide") {
+    } 
+    else if(op === "divide") {
       var answer = parseInt(a) / parseInt(b)
 }
+
+document.getElementById("answer").innerHTML = answer
+
 }
